@@ -7,13 +7,15 @@
 html,
 body {
   height: 100%;
-  background: #abbaab; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  background: url("./img/racecar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: -webkit-linear-gradient(
     to right,
     #ffffff,
     #abbaab
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     #ffffff,
     #abbaab
@@ -22,6 +24,8 @@ body {
 
 body {
   font-family: sans-serif;
+  color: #fff;
+  font-size: 5vw;
 }
 
 .main {
@@ -56,10 +60,17 @@ body {
   display: block;
   margin: 0 auto;
   border: 1px solid #999;
-  border-radius: 5px;
+  background-color: transparent;
   padding: 10px 15px;
   cursor: pointer;
-  color: #333;
+  color: rgb(255, 255, 255);
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.2);
+  background-color: #fff;
+  color: #000;
 }
 
 .result {

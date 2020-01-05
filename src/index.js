@@ -20,21 +20,21 @@ function palindromeChecker() {
       oddHalf.reverse().pop();
 
       if (oddHalf.join("") === array.join("")) {
-        result({ color: "#FFFE94", text: "YAY" });
+        result({ color: "#000", text: "It is a Palindrome" });
         return true;
       }
 
-      result({ color: "#FF7A7A", text: "NAY" });
+      result({ color: "#FF7A7A", text: "It is not a Palindrome" });
       return false;
     }
 
     const evenHalf = array.splice(0, length / 2);
     if (evenHalf.join("") === array.reverse().join("")) {
-      result({ color: "#FFFE94", text: "YAY" });
+      result({ color: "#000", text: "It is a Palindrome" });
       return true;
     }
 
-    result({ color: "#FF7A7A", text: "NAY" });
+    result({ color: "#FF7A7A", text: "It is not a Palindrome" });
     return false;
   };
 }
